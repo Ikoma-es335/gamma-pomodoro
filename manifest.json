@@ -1,0 +1,26 @@
+{
+    "name": "γ-Pomodoro | Focus & Meditation",
+    "short_name": "γ-Pomodoro",
+    "description": "ガンマ波サウンドを使ったポモドーロタイマー。集中と休憩をサポートします。",
+    "start_url": "./index.html",
+    "scope": "./",
+    "display": "standalone",
+    "orientation": "portrait",
+    "background_color": "#f2f7f4",
+    "theme_color": "#f2f7f4",
+    "lang": "ja",
+    "icons": [
+        {
+            "src": "icon/icon-192.jpg",
+            "sizes": "192x192",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "icon/icon-512.jpg",
+            "sizes": "512x512",
+            "type": "image/jpeg",
+            "purpose": "any maskable"
+        }
+    ]
+}

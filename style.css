@@ -1,0 +1,209 @@
+/* 🌿 ナチュラルテイストのベースデザイン */
+body {
+    background-color: #f2f7f4;
+    color: #2c3e35;
+    font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    transition: all 0.5s ease;
+    position: relative;
+}
+
+/* 🌊 休憩モード用の背景色（優しいアイスブルー） */
+body.rest-mode {
+    background-color: #e9f0fa;
+    color: #2a3a4a;
+}
+
+/* 👑 アプリタイトル */
+.app-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #7a8f85;
+    text-transform: uppercase;
+    transition: color 0.5s ease;
+}
+body.rest-mode .app-title {
+    color: #8fa0b0;
+}
+
+/* 💜 ハートのような「γ」アイコン */
+.gamma-svg {
+    width: 14px;
+    height: 14px;
+    fill: currentColor;
+    transform: translateY(1px);
+}
+
+/* 📦 タイマーとスイッチをまとめる中央グループ */
+.timer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+}
+
+/* 🎛️ ラジオスタジオ風スイッチ */
+.studio-switch {
+    display: flex;
+    background-color: #e2ede7;
+    border-radius: 6px;
+    padding: 4px;
+    gap: 4px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    transition: background-color 0.5s ease;
+}
+body.rest-mode .studio-switch {
+    background-color: #dadfe8;
+}
+
+/* スイッチのランプ単体 */
+.lamp {
+    font-size: 10px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    padding: 4px 14px;
+    border-radius: 4px;
+    color: #a3b8ad;
+    transition: all 0.3s ease;
+}
+body.rest-mode .lamp {
+    color: #b5c2cc;
+}
+
+/* 🟢 集中ワーク中の点灯状態 */
+body:not(.rest-mode) .lamp.focus-lamp {
+    background-color: #4a6b5d;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.12);
+}
+
+/* 🔵 マインドフル休憩中の点灯状態 */
+body.rest-mode .lamp.rest-lamp {
+    background-color: #2b6cb0;
+    color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+}
+
+/* ⏱️ タイマー表示部分 */
+#display {
+    font-size: 90px;
+    font-weight: 300;
+    margin: 15px 0 0 0;
+    font-variant-numeric: tabular-nums;
+    transition: color 0.5s ease;
+}
+
+body.rest-mode #display {
+    color: #2b6cb0;
+}
+
+/* 📦 ボタンのコンテナ */
+.button-group, .control-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.button-group {
+    margin-bottom: 30px;
+}
+
+/* 🖱️ ボタンの共通デザイン */
+button {
+    background-color: #ffffff;
+    color: #4a6b5d;
+    border: 1px solid #d3e2db;
+    border-radius: 20px;
+    padding: 8px 16px;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+    transition: all 0.2s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+body.rest-mode button {
+    color: #3a536b;
+    border-color: #d1dfed;
+}
+
+button:hover {
+    background-color: #eaf2ee;
+    border-color: #b8cfc4;
+}
+body.rest-mode button:hover {
+    background-color: #e3edf7;
+    border-color: #b3c7dc;
+}
+
+button svg {
+    width: 12px;
+    height: 12px;
+    fill: currentColor;
+}
+
+.control-group button {
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: bold;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    min-width: 102px;
+}
+
+.btn-toggle {
+    background-color: #4a6b5d;
+    color: #ffffff;
+    border: none;
+}
+.btn-toggle:hover {
+    background-color: #385246;
+}
+
+.btn-toggle.running {
+    background-color: #4a6b5d;
+}
+.btn-toggle.running:hover {
+    background-color: #385246;
+}
+
+body.rest-mode .btn-toggle {
+    background-color: #2b6cb0;
+    color: #ffffff;
+}
+body.rest-mode .btn-toggle:hover {
+    background-color: #1e4e80;
+}
+
+body.rest-mode .btn-toggle.running {
+    background-color: #2b6cb0;
+    color: #ffffff;
+}
+body.rest-mode .btn-toggle.running:hover {
+    background-color: #1e4e80;
+}
+
+.brand-footer {
+    position: absolute;
+    bottom: 25px;
+    font-size: 11px;
+    letter-spacing: 2px;
+    opacity: 0.3;
+    text-transform: uppercase;
+}

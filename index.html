@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>γーPomodoro | Focus & Meditation</title>
+
+    <!-- ✅ PWA: manifest -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- ✅ PWA: テーマカラー（Androidのブラウザタブ・ステータスバー） -->
+    <meta name="theme-color" content="#f2f7f4">
+
+    <!-- ✅ iPhone / iOS 対応 -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="γ-Pomodoro">
+    <link rel="apple-touch-icon" href="icon/icon-192.jpg">
+
+    <!-- ✅ 一般的なファビコン代替（jpgアイコン流用） -->
+    <link rel="icon" href="icon/icon-192.jpg" type="image/jpeg">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-title">
+        <svg class="gamma-svg" viewBox="0 0 24 24">
+            <path d="M19,4.5 C16.5,4.5 14.2,6.2 13.2,8.5 C12.5,7.2 11.2,5.8 9.5,5 C8.5,4.5 7,4.5 6,5 C4.5,5.8 4,7.8 4.8,9.2 C6,11.2 8.5,13.8 10.2,16 L10.2,19 C10.2,20.1 11.1,21 12,21 C12.9,21 13.8,20.1 13.8,19 L13.8,16 C15.5,13.8 18,11.2 19.2,9.2 C20,7.8 19.5,5.8 18,5 C18.4,4.7 18.7,4.5 19,4.5 Z M12,14.2 C10.8,12.5 8.8,10.2 7.8,8.8 C7.5,8.3 7.5,7.7 7.8,7.3 C8.1,7 8.7,7 9,7.3 C10.2,8.5 11.2,10.2 12,11.5 C12.8,10.2 13.8,8.5 15,7.3 C15.3,7 15.9,7 16.2,7.3 C16.5,7.7 16.5,8.3 16.2,8.8 C15.2,10.2 13.2,12.5 12,14.2 Z"/>
+        </svg>
+        <span>ー Pomodoro | Focus & Meditation</span>
+    </div>
+
+    <div class="timer-container">
+        <div class="studio-switch">
+            <div class="lamp focus-lamp">FOCUS</div>
+            <div class="lamp rest-lamp">REST</div>
+        </div>
+        <div id="display">25:00</div>
+    </div>
+
+    <div class="button-group">
+        <button onclick="changeTime(-300)">-5</button>
+        <button onclick="changeTime(-60)">-1</button>
+        <button onclick="changeTime(60)">+1</button>
+        <button onclick="changeTime(300)">+5</button>
+    </div>
+
+    <div class="control-group">
+        <button id="toggle-btn" class="btn-toggle" onclick="toggleTimer()">
+            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>START
+        </button>
+        <button onclick="resetTimer()">
+            <svg viewBox="0 0 24 24"><path d="M12 5V1L7 6l5 5V7c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6H4c0 4.42 3.58 8 8 8s8-3.58 8-8-3.58-8-8-8z"/></svg>RESET
+        </button>
+    </div>
+
+    <div class="brand-footer">Reepy Works</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
