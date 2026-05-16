@@ -36,6 +36,16 @@ body.rest-mode {
     text-align: center;
     transition: color 0.5s ease;
 }
+.app-title-row1 {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.app-title-row2 {
+    font-size: 11px;
+    letter-spacing: 2px;
+}
 body.rest-mode .app-title {
     color: #8fa0b0;
 }
