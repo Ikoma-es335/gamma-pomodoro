@@ -30,7 +30,7 @@ body.rest-mode {
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: bold;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     color: #7a8f85;
     text-transform: uppercase;
     text-align: center;
@@ -64,7 +64,7 @@ body.rest-mode .app-title {
     flex-direction: column;
     align-items: center;
     margin-bottom: 60px;
-    gap: 30px;
+    gap: 50px;
 }
 
 /* 🎛️ ラジオスタジオ風スイッチ */
@@ -130,7 +130,7 @@ body.rest-mode #display {
 }
 
 .button-group {
-    margin-bottom: 30px;
+    margin-bottom: 50px;
 }
 
 /* 🖱️ ボタンの共通デザイン */
