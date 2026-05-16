@@ -7,7 +7,8 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100dvh;
+    height: 100dvh;
     margin: 0;
     transition: all 0.5s ease;
     position: relative;
@@ -51,6 +52,7 @@ body.rest-mode .app-title {
     flex-direction: column;
     align-items: center;
     margin-bottom: 35px;
+    gap: 30px;
 }
 
 /* 🎛️ ラジオスタジオ風スイッチ */
