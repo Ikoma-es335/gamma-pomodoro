@@ -9,8 +9,8 @@ const ASSETS = [
     './manifest.json',
     './focus.mp3',
     './rest.mp3',
-    './icon/icon-192.jpg',
-    './icon/icon-512.jpg'
+    './icon/icon-192.png',
+    './icon/icon-512.png'
 ];
 
 // インストール時：全アセットをキャッシュ
