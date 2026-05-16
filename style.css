@@ -23,15 +23,17 @@ body.rest-mode {
 /* 👑 アプリタイトル */
 .app-title {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 6px;
+    gap: 4px;
     font-size: 14px;
     letter-spacing: 2px;
     font-weight: bold;
     margin-bottom: 40px;
     color: #7a8f85;
     text-transform: uppercase;
+    text-align: center;
     transition: color 0.5s ease;
 }
 body.rest-mode .app-title {
