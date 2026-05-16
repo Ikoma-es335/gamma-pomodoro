@@ -20,44 +20,6 @@ body.rest-mode {
     color: #2a3a4a;
 }
 
-/* 👑 アプリタイトル */
-.app-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 4px;
-    font-size: 14px;
-    letter-spacing: 2px;
-    font-weight: bold;
-    margin-bottom: 60px;
-    color: #7a8f85;
-    text-transform: uppercase;
-    text-align: center;
-    transition: color 0.5s ease;
-}
-.app-title-row1 {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-}
-
-.app-title-row2 {
-    font-size: 11px;
-    letter-spacing: 2px;
-}
-body.rest-mode .app-title {
-    color: #8fa0b0;
-}
-
-/* 💜 ハートのような「γ」アイコン */
-.gamma-svg {
-    width: 14px;
-    height: 14px;
-    fill: currentColor;
-    transform: translateY(1px);
-}
-
 /* 📦 タイマーとスイッチをまとめる中央グループ */
 .timer-container {
     display: flex;
