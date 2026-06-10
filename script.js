@@ -85,15 +85,18 @@ function switchMode() {
         isWorkMode = false;
         timeLeft = 5 * 60;
         document.body.classList.add('rest-mode');
+        restAudio.load();
+        restAudio.play().catch(e => console.log('音楽再生エラー:', e));
     } else {
         isWorkMode = true;
         timeLeft = 25 * 60;
         document.body.classList.remove('rest-mode');
+        focusAudio.load();
+        focusAudio.play().catch(e => console.log('音楽再生エラー:', e));
     }
     updateDisplay();
     startTimer();
 }
-
 // 🎵 完全リセット
 function resetTimer() {
     stopTimer();
